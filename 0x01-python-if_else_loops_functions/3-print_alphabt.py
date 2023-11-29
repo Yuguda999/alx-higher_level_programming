@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 for i in range(ord("a"), ord("z")+1):
-    if i == ord('q') or i == ord('e'):
+    if i == ord("q") or i == ord("e"):
         continue
-    print(f'{i:c}', end="")
+
+    print("{:c}".format(i), end="")
