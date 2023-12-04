@@ -9,5 +9,5 @@ def delete_at(my_list=[], idx=0):
     Return:
         list
     """
-    del my_lmy_list[idx]
+    del my_list[idx]
     return my_list
