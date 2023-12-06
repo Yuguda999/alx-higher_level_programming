@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-def best_score(a_dictionary):
-    max_score = 0
-    if a_dictionary is None:
+def best_score(a_dict):
+    """
+    find the key with the highes value
+    """
+    if a_dict is None or a_dict == {}:
         return None
-    for key, value in a_dictionary.items():
-        if value > max_score:
-            best_key = key
-            max_score = value
-    return best_key
+    best = max(a_dict.values())
+    for key in a_dict.keys():
+        if a_dict[key] == best:
+            return key
